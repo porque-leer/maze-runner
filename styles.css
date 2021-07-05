@@ -80,7 +80,7 @@ html {
   background-color: black;
   display: inline-block;
   font-size: 1.2rem;
-  cursor: url(https://cdn.custom-cursor.com/db/5047/32/arrow2857.png), pointer;
+  cursor: url(https://cdn.custom-cursor.com/db/7517/32/maze-pointer.png) , pointer;
 }
 
 /*Libros*/
@@ -96,7 +96,7 @@ header {
   font-size: 1.5rem;
   text-align: center;
   padding: 1rem 0.2rem;
-  cursor: url(https://cdn.custom-cursor.com/db/5047/32/arrow2857.png), pointer;
+  cursor: url(https://cdn.custom-cursor.com/db/7517/32/maze-pointer.png) , pointer;
   text-decoration: none;
   font-weight: 900;
   font-size: 2rem;
@@ -152,7 +152,7 @@ input:focus {
 .libro {
   display: inline-flex;
   padding: 3rem 2rem 1rem 2rem;
-  cursor: url(https://cdn.custom-cursor.com/db/5047/32/arrow2857.png), pointer;
+  cursor: url(https://cdn.custom-cursor.com/db/7517/32/maze-pointer.png) , pointer;
   transition: all 0.3s ease-out;
 }
 
