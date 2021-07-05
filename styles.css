@@ -1,0 +1,477 @@
+:root {
+  --color-verde: rgba(19, 124, 1, 0.753);
+  --color-verde-hover: rgba(26, 173, 0, 0.712);
+  --color-titulos: rgb(218, 218, 218);
+  --color-subtitulos: rgb(158, 158, 158);
+  /*Colores que se usarán en el documento*/
+}
+* {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+html {
+  background-color: black;
+  width: 100%;
+  cursor: url(https://cdn.custom-cursor.com/db/5048/32/arrow2857.png), default;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-subtitulos);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: grey;
+}
+
+/*Index*/
+
+.fondo-inicio {
+  background-image: url("fondo_index.jpg");
+  width: 100%;
+  height: 65vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flexbox;
+  background-position: center;
+}
+.principal {
+  background-color: black;
+  display: flexbox;
+  height: 35vh;
+  margin-top: -5vh;
+  border-radius: 5vh 5vh 0 0;
+}
+.principal-texto {
+  text-align: center;
+}
+.principal-titulo {
+  color: var(--color-titulos);
+  padding-top: 1rem;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.principal-titulo::selection {
+  background-color: var(--color-verde);
+  color: black;
+}
+.principal-subtitulo {
+  color: var(--color-subtitulos);
+  padding-top: 1.5rem;
+  font-size: 1.2rem;
+}
+.principal-div-btn {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 1.5rem;
+}
+.principal-btn {
+  color: var(--color-verde);
+  padding: 0.3rem 2rem;
+  border: var(--color-verde) solid 0.5rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  background-color: black;
+  display: inline-block;
+  font-size: 1.2rem;
+  cursor: url(https://cdn.custom-cursor.com/db/5047/32/arrow2857.png), pointer;
+}
+
+/*Libros*/
+
+header {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.libros-titulo {
+  color: var(--color-verde-hover);
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem 0.2rem;
+  cursor: url(https://cdn.custom-cursor.com/db/5047/32/arrow2857.png), pointer;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 2rem;
+  transition: 0.5s;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.libros-titulo::selection{
+  background-color: var(--color-verde-hover);
+  color: black;
+}
+
+.libros-titulo:hover{
+  background-color: var(--color-verde-hover);
+  color: black;
+}
+
+input {
+  display: block;
+  margin: auto;
+  margin-bottom: 1rem;
+  width: 80%;
+  font-size: 1.2rem;
+  padding: 0.3rem 0.5rem;
+  background-color: rgb(37, 37, 37);
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--color-subtitulos);
+  text-align: center;
+}
+
+input:focus {
+  background-color: rgb(61, 61, 61);
+  outline: none;
+}
+
+.filter {
+  visibility: hidden;
+  opacity: 0;
+  order: 1;
+}
+
+.libros {
+  background-color: var(--color-titulos);
+  display: flex;
+  width: 100%;
+  border-radius: 5vh 5vh 0 0;
+  justify-content: space-around;
+  bottom: 0;
+  flex-wrap: wrap;
+}
+
+.libro {
+  display: inline-flex;
+  padding: 3rem 2rem 1rem 2rem;
+  cursor: url(https://cdn.custom-cursor.com/db/5047/32/arrow2857.png), pointer;
+  transition: all 0.3s ease-out;
+}
+
+.libro-imagen-div {
+  background-color: black;
+  width: 35%;
+  height: 100%;
+  display: flex;
+  border-radius: 0.4rem;
+  justify-content: center;
+}
+
+.libro-imagen {
+  width: 80%;
+  border-radius: 0.4rem;
+  display: block;
+  margin: auto;
+}
+
+.libro-texto {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  padding-left: 1.5rem;
+}
+
+.libro-titulo {
+  font-size: 1em;
+  padding-bottom: 0.5rem;
+}
+
+.libro-titulo::selection {
+  background-color: var(--color-verde);
+  color: black;
+}
+
+.libro-informacion {
+  font-size: 0.8rem;
+  color: rgb(73, 73, 73);
+}
+
+.libro-informacion::selection {
+  background-color: rgb(63, 63, 63);
+  color: var(--color-titulos);
+}
+
+/*Sección videos*/
+
+.video-seccion {
+  height: auto;
+  padding: 1rem;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+video {
+  width: 80vw;
+}
+
+.guion-seccion {
+  text-align: center;
+  width: 80%;
+}
+
+.guion-titulo {
+  color: var(--color-verde);
+  font-size: 3rem;
+  padding: 2rem;
+}
+
+.guion-titulo::selection {
+  color: var(--color-titulos);
+  background-color: var(--color-verde);
+}
+
+.guion {
+  font-size: 2rem;
+  color: grey;
+  margin-top: 2rem;
+  line-height: 3rem;
+  margin-bottom: 3rem;
+}
+
+.guion::selection {
+  color: var(--color-verde);
+  background-color: var(--color-subtitulos);
+}
+
+.juego {
+  padding: 5%;
+  width: 70vw;
+  height: 40vw;
+}
+
+/*Botones*/
+
+.btns {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.prev-btn,
+.next-btn {
+  margin: 2rem 1.5%;
+}
+
+.prev-btn a,
+.next-btn a {
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background-color: var(--color-verde);
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.prev-btn a:hover,
+.next-btn a:hover {
+  background-color: var(--color-verde-hover);
+}
+
+/*
+Responsive
+*/
+
+@media (min-width: 600px) {
+  /*Index*/
+
+  .fondo-inicio {
+    height: 45vh;
+  }
+  .principal {
+    height: 60vh;
+  }
+  .principal-titulo {
+    padding-top: 1rem;
+    font-size: 4rem;
+  }
+  .principal-subtitulo {
+    font-size: 1.8rem;
+  }
+  .principal-btn {
+    padding: 0.5rem 3rem;
+    border-width: 0.5rem;
+    border-radius: 1.3rem;
+    font-size: 1.8rem;
+  }
+
+  /*Libros*/
+
+  .libros-titulo {
+    font-size: 2rem;
+    padding: 2rem;
+  }
+
+  .libro {
+    padding: 4rem 3rem 2rem 3rem;
+  }
+
+  .libro-imagen-div {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .libro-texto {
+    width: 17rem;
+    padding-left: 2rem;
+  }
+  .libro-titulo {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  .libro-informacion {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 900px) {
+  /*Index*/
+
+  .fondo-inicio {
+    height: 100vh;
+    background-image: url("https://i.pinimg.com/originals/1e/3d/65/1e3d65ecb6a4f0cb60af79a066c202e3.jpg");
+  }
+  .principal {
+    height: 100vh;
+    margin-top: -100vh;
+    width: 100vw;
+    background: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  }
+  .principal-texto {
+    text-align: right;
+    margin-right: 10%;
+  }
+  .principal-titulo {
+    padding-top: 1rem;
+    font-size: 8rem;
+  }
+  .principal-subtitulo {
+    font-size: 3rem;
+    padding-top: 10%;
+  }
+  .principal-div-btn {
+    margin-top: 1.5rem;
+    margin: 1.5rem 5% auto 0;
+    position: relative;
+    float: right;
+  }
+  .principal-btn {
+    padding: 0.7rem 5rem;
+    border-width: 0.7rem;
+    border-radius: 1.5rem;
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--color-verde);
+    border-color: var(--color-verde);
+    font-weight: 900;
+    text-align: center;
+  }
+  .principal-btn:hover {
+    color: var(--color-verde-hover);
+    border-color: var(--color-verde-hover);
+  }
+
+  /*Libros*/
+
+  .libro {
+    padding: 3rem 2rem 2rem 2rem;
+    border-radius: 5vh;
+    transition: 0.5s;
+  }
+  .libro:hover {
+    background-color: rgb(192, 192, 192);
+  }
+  .libros {
+    border-radius: 5vh;
+  }
+
+  .libro-imagen-div {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .libro-texto {
+    width: 15rem;
+    padding-left: 1.7rem;
+  }
+  .libro-titulo {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+  .libro-informacion {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 470px) {
+  .input {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  /*Libros*/
+  
+  .libros-titulo {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+  
+  /*Video*/
+
+  .guion-titulo {
+    font-size: 2rem;
+    padding: 1.8rem;
+  }
+
+  .guion {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .juego {
+    width: 90vw;
+    height: 60vw;
+  }
+}
+
+@media (max-width: 600px) {
+  /*Video*/
+
+  .guion-titulo {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .guion {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .juego {
+    width: 90vw;
+    height: 60vw;
+  }
+
+  /*Botones*/
+
+  .prev-btn,
+  .next-btn {
+    margin: 1.5rem 1.5%;
+  }
+
+  .prev-btn a,
+  .next-btn a {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+}
