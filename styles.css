@@ -317,6 +317,10 @@ Responsive
     width: 10rem;
     height: 10rem;
   }
+  
+  .libro-imagen{
+  height: 8rem;
+  }
 
   .libro-texto {
     width: 17rem;
